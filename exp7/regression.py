@@ -5,7 +5,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.preprocessing import PolynomialFeatures
 
-#single linear regression
 print("Single Linear Regression (TV vs Sales)")
 advertising_df = pd.read_csv("exp7/advertising.csv")
 X_single = advertising_df[['TV']]
@@ -23,11 +22,9 @@ y_pred_s = model_single.predict(X_test_s)
 r2_single = r2_score(y_test_s, y_pred_s)
 mse_single = mean_squared_error(y_test_s, y_pred_s)
 
-
 print("R² Score (Single Linear):", r2_single)
 print("Mean Squared Error (Single Linear):", mse_single)
 
-#multiple linear regression
 print("\nMultiple Linear Regression (Boston Housing) ")
 boston_df = pd.read_csv("exp7/Boston.csv")
 
@@ -51,9 +48,6 @@ print("R² Score (Multiple Linear):", r2_multi)
 print("Mean Squared Error (Multiple Linear):", mse_multi)
 
 
-
-
-#polynomial regression
 print("\nPolynomial Regression (Month vs Sales)")
 ice_df = pd.read_csv("exp7/icecream.csv")
 X_poly = ice_df[['month']]

@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 
-df = pd.read_csv("/home/cs-ai-07/Albert/exp11/Iris.csv")
+df = pd.read_csv("exp11/Iris.csv")
 
 print("Dataset shape:", df.shape)
 print("Columns:", df.columns)
